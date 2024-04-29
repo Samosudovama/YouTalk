@@ -1,0 +1,10 @@
+/* const months = ['January', 'February', 'March', 'April','May', 'June', 'July','August','September','November','December'];
+const quartetArray = [];
+let index = 0; */
+
+const fruits = ['apple','january','february',];
+if (fruits.indexOf('apple') >=0) {
+    console.log(indexOf('apple'));
+} else {
+    console.log('Такого элемента нет');
+}

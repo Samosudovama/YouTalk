@@ -17,7 +17,7 @@
 
             <nav>
                 <ul class="nav__container">
-                    <li >
+                    <li>
                         <a href="">О нас </a>
                     </li>
                     <li>
@@ -41,176 +41,477 @@
                 </ul>
                 
             </nav>
-            <button class="nav__button">Подобрать психолога</button>
+            <button class="nav__button cursor-pointer">Подобрать психолога</button>
         </div>
     </header>
 
     <div class="content">
-        <!-- -->
-        <div class="top-row">
-            <p class="top-row__text-one">Главная</p>
-            <p class="top-row__arrow"><img src="./images/svg/Group.svg" alt="стрелка" class="top-row__arrow__img"></p>
-            <p class="top-row__text-two">Блог</p>
-        </div>
+        
         <!-- Заголовок -->
         <section>            
             <div class="heading-blog">
-                <h1 class="heading-blog__txt">Блог</h1>
+                <h1 class="heading-blog__txt">Статьи</h1>
             </div> 
         
             <!-- Первый блок.  Строка с названиями статей -->
             <div class="content-one">
-                <div class="content-one__box">
-                    <div class="content-one__box_img"><img src="./images/png/smile.png" alt="смайлик"></div>
+                <div class="content-one__box cursor-pointer">
+                    <div class="content-one__box-img"><img src="./images/png/smile.png" alt="смайлик"></div>
                     <div class="content-one__box-txt">Все</div>
                 </div>
-                <div class="content-one__box">
+                <div class="content-one__box cursor-pointer">
                     <div class="content-one__box-txt">Самооценка и самовосприятие</div>
                 </div>
-                <div class="content-one__box">
-                    <div class="content-one__box__img"> <img src="./images/png/unicorn.png" alt="смайлик"></div>
+                <div class="content-one__box cursor-pointer">
+                    <div class="content-one__box-img"> <img src="./images/png/unicorn.png" alt="смайлик"></div>
                     <div class="content-one__box-txt">Self</div>
                 </div>
-                <div class="content-one__box">
-                    <div class="content-one__box-txt">Чувсьва и эмоции</div>
+                <div class="content-one__box cursor-pointer">
+                    <div class="content-one__box-txt" >Чувства и эмоции</div>
                 </div>
-                <div class="content-one__box">
+                <div class="content-one__box cursor-pointer">
                     <div class="content-one__box-txt">Тревога</div>
                 </div>
-                <div class="content-one__box">
+                <div class="content-one__box cursor-pointer">
                     <div class="content-one__box-txt">Упражнения</div>
                 </div>
-                <div class="content-one__box">
+                <div class="content-one__box cursor-pointer">
                     <div class="content-one__box-txt">Психология питания</div>
                 </div>
-                <div class="content-one__box">
+                <div class="content-one__box cursor-pointer">
                     <div class="content-one__box-txt">Насилие</div>
                 </div>
-                <div class="content-one__box">
+                <div class="content-one__box cursor-pointer">
                     <div class="content-one__box-txt">Личное здоровье</div>
                 </div>
             </div>         
         
 
-         <!--  Второй блок . Контейнер с двумя блоками -->
+            <!--  Второй блок . Контейнер с двумя блоками -->
 
 
             <div class="content-two">
-                <!-- Первый блок с фото + текст на фото + описание -->
+                <!-- Один блок с фото + текст на фото + описание -->
                 <div class="content-two__box">
-                    <!-- Фото в верхней части блока -->
-                    <div class="content__box-img img001">
-                        <!-- Текст (возможно с мини-картинкой), затененный, расположенный 
-                            на фото в верхней части блока --> 
-                        <div class="content-one__box shadow">
-                            <div class="content-one__box-img"> 
-                                <img src="./images/png/unicorn.png" alt="смайлик">
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->
+                    <div>
+                         <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img001">
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный 
+                                на фото в верхней части блока -->                           
+                            <div class="block">
+                                <div class="content-one__box shadow">
+                                    <div class="content-one__box-img"> 
+                                        <img src="./images/png/unicorn.png" alt="смайлик">
+                                    </div>
+                                    <div class="content-one__box-txt">
+                                        Самооценка и самопринятие
+                                    </div>
+                                </div>      
+                            </div>                  
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                                на фото в верхней части блока -->                              
+                            <div class="block">
+                                <div class="content-one__box shadow">                            
+                                    <div class="content-one__box-img"> 
+                                        <img src="./images/png/unicorn.png" alt="смайлик">
+                                    </div>
+                                    <div class="content-one__box-txt">
+                                        Self
+                                    </div>                            
+                                </div> 
+                            </div>                                            
+                        </div>
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                                Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
                             </div>
-                            <div class="content-one__box-txt">
-                             Self
+                            <div class="txt002">                        
+                                Автор: Лиза Файнтух                        
+                            </div>
+                            <div class="txt003">                        
+                                Изначально термин «эмоциональное профессиональной сфере и относился...                        
                             </div>
                         </div>
-                         <!-- Текст (возможно с мини-картинкой), затененный, расположенный
-                             на фото в верхней части блока --> 
-                        <div class="content-one__box shadow">
-                            <div class="content-one__box__img"> 
-                                <img src="./images/png/unicorn.png" alt="смайлик">
-                            </div>
-                            <div class="content-one__box-txt">
-                                Self
-                            </div>
-                        </div>                    
                     </div>
-                     <!-- Описание под фото -->
-                    <div class="content__box-txt">
-                        <h2 class="txt001">
-                            Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
-                        </h2>
-                        <p class="txt002">
-                            Автор: Лиза Файнтух
-                        </p>
-                        
-                    </div>
+                    <div class="txt004">
+                         21.08.2021
+                    </div>   
                 </div>
 
-                <!-- Второй блок с фото + текст на фото + описание -->
+                <!-- Один блок с фото + текст на фото + описание -->
                 <div class="content-two__box">
-                    <!-- Фото в верхней части блока -->
-                    <div class="content__box-img img002">
-                        <!-- Текст (возможно с мини-картинкой), затененный, расположенный 
-                            на фото в верхней части блока --> 
-                        <div class="content-one__box shadow">
-                            <div class="content-one__box-img"> 
-                                <img src="./images/png/unicorn.png" alt="смайлик">
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->
+                    <div>
+                        <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img002" >                       
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный 
+                                на фото в верхней части блока --> 
+                            <div class="content-one__box shadow">
+                                <div class="content-one__box-img"> 
+                                    <img src="./images/png/unicorn.png" alt="смайлик">
+                                </div>
+                                <div class="content-one__box-txt">
+                                    Self
+                                </div>
+                            </div>                    
+                        </div>
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                               <a href="article1.html" target="_blank">Как не утонуть в тревоге и управлять своими страхами</a>                             
                             </div>
-                            <div class="content-one__box-txt">
-                             Self
+                            <div class="txt002">                            
+                                Автор: Екатерина Бельтюкова                            
+                            </div>
+                            <div class="txt003">                            
+                                Один из самых важных навыков, которые может дать работа
+                                с психотерапевтом - умение в разных ситуациях по-разному обходиться ...                            
                             </div>
                         </div>
-                        <!-- Текст (возможно с мини-картинкой), затененный, расположенный 
-                            на фото в верхней части блока --> 
-                        <div class="content-one__box shadow">
-                            <div class="content-one__box__img"> 
-                                <img src="./images/png/unicorn.png" alt="смайлик">
-                            </div>
-                            <div class="content-one__box-txt">
-                                Self
-                            </div>
-                        </div>                    
                     </div>
-                    <!-- Описание под фото -->
-                    <div class="content__box-txt">
-                        <div class="content__box-txt txt001">
-                             <h4>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h4>
-                        </div>
-
-                    </div>
+                    <div class="txt004">
+                         21.08.2021
+                    </div>                    
                 </div>
             </div>
 
             
-                <!-- Третий блок.Контейнер с нескольькими блоками -->
+            <!-- Третий блок.Контейнер с нескольькими блоками -->
 
                 
             <div class="content-three">
                 <!-- Один блок с фото + текст на фото + описание -->
-                <div class="content-three__box">                    
-                    <!-- Фото в верхней части блока -->
-                    <div class="content__box-img img002">                        
-                        <!-- Текст (возможно с мини-картинкой), затененный, расположенный
-                             на фото в верхней части блока --> 
-                        <div class="content-one__box shadow">
-                            <div class="content-one__box-img"> 
-                                <img src="./images/png/unicorn.png" alt="смайлик">
+                <div class="content-three__box">  
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->                  
+                    <div>
+                         <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img003">                        
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                            на фото в верхней части блока --> 
+                            <div class="block">
+                                <div class="content-one__box shadow">
+                                    <div class="content-one__box-img"> 
+                                        <img src="./images/png/unicorn.png" alt="смайлик">
+                                    </div>
+                                    <div class="content-one__box-txt">
+                                        Самооценка и самопринятие.
+                                    </div>
+                                </div> 
                             </div>
-                            <div class="content-one__box-txt">
-                                Self
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                            на фото в верхней части блока --> 
+                            <div class="block">
+                                <div class="content-one__box shadow">
+                                    <div class="content-one__box-img"> 
+                                        <img src="./images/png/unicorn.png" alt="смайлик">
+                                    </div>
+                                    <div class="content-one__box-txt">
+                                        Психология питания.
+                                    </div>
+                                </div> 
+                            </div>                                            
+                        </div>
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                                Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
+                            </div>
+                            <div class="txt002">                        
+                                Автор: Лиза Файнтух                        
+                            </div>
+                            <div class="txt003">                        
+                                Изначально термин «эмоциональное профессиональной сфере и относился...                        
                             </div>
                         </div>
-                        <!-- Текст (возможно с мини-картинкой), затененный, расположенный
-                            на фото в верхней части блока --> 
-                        <div class="content-one__box shadow">
-                            <div class="content-one__box__img"> 
-                                <img src="./images/png/unicorn.png" alt="смайлик">
+                    </div>
+                    <div class="txt004">                            
+                        21.08.2021                            
+                    </div>   
+                </div>
+
+                <!-- Один блок с фото + текст на фото + описание -->
+                <div class="content-three__box">  
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->                  
+                    <div>
+                         <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img004">                         
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                                на фото в верхней части блока --> 
+                            <div class="content-one__box shadow">
+                                <div class="content-one__box-img"> 
+                                    <img src="./images/png/unicorn.png" alt="смайлик">
+                                </div>
+                                <div class="content-one__box-txt">
+                                Self
+                                </div>
+                            </div>                        
+                        </div>
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                                Как не утонуть в тревоге и управлять своими страхами                            
                             </div>
-                            <div class="content-one__box__txt">
-                             Self
+                            <div class="txt002">                            
+                                Автор: Екатерина Бельтюкова                            
+                            </div>
+                            <div class="txt003">                            
+                                Один из самых важных навыков, которые может дать работа
+                                с психотерапевтом - умение в разных ситуациях по-разному обходиться ...                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt004">                            
+                        21.08.2021                            
+                    </div>                                                
+                </div>
+
+                <!-- Один блок с фото + текст на фото + описание -->
+                <div class="content-three__box">  
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->                  
+                    <div>
+                         <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img005">                        
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                                на фото в верхней части блока --> 
+                            <div class="content-one__box shadow">
+                                <div class="content-one__box-img"> 
+                                    <img src="./images/png/unicorn.png" alt="смайлик">
+                                </div>
+                                <div class="content-one__box-txt">
+                                Self
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                                Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
+                            </div>
+                            <div class="txt002">                        
+                                Автор: Лиза Файнтух                        
+                            </div>
+                            <div class="txt003">                        
+                                Изначально термин «эмоциональное профессиональной сфере и относился...                        
+                            </div>
+                        </div>
+                        <div class="txt004">
+                            21.08.2021
+                        </div>                        
+                    </div>
+                </div>
+
+                <!-- Один блок с фото + текст на фото + описание -->
+                <div class="content-three__box">  
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->                  
+                    <div>
+                        <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img006">                        
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                                на фото в верхней части блока --> 
+                            <div class="content-one__box shadow">
+                                <div class="content-one__box-img"> 
+                                    <img src="./images/png/unicorn.png" alt="смайлик">
+                                </div>
+                                <div class="content-one__box-txt">
+                                Self
+                                </div>
+                            </div>                        
+                        </div>
+
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                                Как не утонуть в тревоге и управлять своими страхами                            
+                            </div>
+                            <div class="txt002">                            
+                                Автор: Екатерина Бельтюкова                            
+                            </div>
+                            <div class="txt003">                            
+                                Один из самых важных навыков, которые может дать работа
+                                с психотерапевтом - умение в разных ситуациях по-разному обходиться ...                            
                             </div>
                         </div>                        
                     </div>
-
-                    <!-- Описание под фото -->
-                    <div class="content__box-txt">
-                        <div class="content__box-txt txt001 "> 
-                            <h4>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h4>первый текст
-                        </div>
-
+                    <div class="txt004">
+                        21.08.2021
                     </div>
                 </div>
-            </div>
-        </section>        
 
-    </div>
-    
+                <!-- Один блок с фото + текст на фото + описание -->
+                <div class="content-three__box">  
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->                         
+                    <div>
+                         <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img007">                         
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                                на фото в верхней части блока --> 
+                            <div class="block">
+                                <div class="content-one__box shadow">
+                                    <div class="content-one__box-img"> 
+                                        <img src="./images/png/unicorn.png" alt="смайлик">
+                                    </div>
+                                    <div class="content-one__box-txt">
+                                    Self
+                                    </div>
+                                </div>        
+                            </div>                
+                        </div>
+
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                                Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики
+                            </div>
+                            <div class="txt002">                        
+                                Автор: Лиза Файнтух                        
+                            </div>
+                            <div class="txt003">                        
+                                Изначально термин «эмоциональное профессиональной сфере и относился...                        
+                            </div>
+                        </div>
+                        <div class="txt004"> 
+                            21.08.2021
+                        </div>                        
+                    </div>
+                </div>                
+
+                <!-- Один блок с фото + текст на фото + описание -->
+                <div class="content-three__box"> 
+                    <!--блок див для отделения всего текста от даты (дата должна находиться в самом низу content-three__box)-->                   
+                    <div>
+                            <!-- Фото в верхней части блока -->
+                        <div class="content__box-img img008">                        
+                            <!-- Текст (возможно с мини-картинкой), затененный, расположенный
+                            на фото в верхней части блока -->                       
+                            <div class="content-one__box shadow">
+                                <div class="content-one__box-img"> 
+                                    <img src="./images/png/unicorn.png" alt="смайлик">
+                                </div>
+                                <div class="content-one__box-txt">
+                                Self
+                                </div>
+                            </div>                         
+                        </div>
+
+                        <!-- Описание под фото -->
+                        <div class="content__box-txt">
+                            <div class="txt001">
+                                Как не утонуть в тревоге и управлять своими страхами                            
+                            </div>
+                            <div class="txt002">                            
+                                Автор: Екатерина Бельтюкова                            
+                            </div>
+                            <div class="txt003">                            
+                                Один из самых важных навыков, которые может дать работа
+                                с психотерапевтом - умение в разных ситуациях по-разному обходиться ...                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt004">
+                            21.08.2021
+                    </div>                    
+                </div>
+            </div>          
+        </section>  
+
+        <!--кнопка "еще"-->
+        <div class="center">
+            <button class="addmore">Ещё</button>
+        </div>  
+    </div>    
 </body>
+<footer>
+    <!-- общий контейнер для футера -->
+    <div class="foot">
+        <!-- контейнер для наполнения футера -->
+        <div class="foot-box">
+            <!-- первый блок контейнера футера -->
+            <div class="foot-box1">
+                <div class="foot-box_txt">                
+                    <li>
+                        <a href="" class="whitecolor">О нас </a>
+                    </li>
+                    <li>
+                        <a href="" class="whitecolor"> Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="" class="whitecolor">Для бизнеса</a>
+                    </li>
+                    <li>
+                        <a href="" class="whitecolor">Психологам</a>
+                    </li>                   
+                    <li>
+                        <a href="" class="whitecolor">FAQ</a>
+                    </li>                
+                </div>
+                <div class="foot-box_txt">
+                    <li>
+                        <a href="" class="whitecolor">Блог</a>
+                    </li>
+                    <li>
+                        <a href="" class="whitecolor">Вебинары</a>
+                    </li>
+                    <li>
+                        <a href="" class="whitecolor">Подскаст</a>
+                    </li>
+                    <li>
+                        <a href="" class="whitecolor">Сертификат</a>
+                    </li>                    
+                    <li>
+                        <a href="" class="whitecolor">Контакты</a>
+                    </li>                     
+                </div>
+            </div>
+            <!-- ворой блок контейнера футера -->
+            <div class="foot-box2">
+                <div style="max-width: 356px">
+                    <h4 class="txt001 whitecolor" >Одно письмо в неделю со свежими новостями и акциями</h4>
+                </div>
+                <div class="emailform">
+                    <form action="">
+                        <input type="text" class="cursor-pointer" placeholder="Ваш e-mail">
+                    </form>
+                    <div class="emailform-arrow">
+                        <img src="images/svg/Group (1).svg" class="cursor-pointer" alt="нажать для отправки емэйла">
+                    </div>
+                </div>               
+                <div style="max-width: 486px" class="txt002 whitecolor">Подписываясь, я соглашаюсь на обработку персональных данных 
+                    в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности
+                </div>
+            </div>
+            <!-- третий блок контейнера футера  -->
+            <div class="foot-box3">
+                <div>
+                    <img src="images/svg/SK.svg"  alt="логотип skillfactory">
+                </div>
+                <div class="foot-icon-group">
+                    <div class="rectangle-footer cursor-pointer">
+                        <img src="images/svg/vkfooter.svg" alt="логотип страницы вконтакте, нажать для перехода">
+                    </div>
+                    <div class="rectangle-footer cursor-pointer">
+                        <img src="images/svg/telegrammfooter.svg" alt="логотип страницы в телеграмм, нажать для перехода">
+                    </div>
+                    <div class="rectangle-footer cursor-pointer">
+                        <img src="images/svg/twitterfooter.svg" alt="логотип страницы в твиттере, нажать для перехода">
+                    </div>
+                    <div class="rectangle-footer cursor-pointer">
+                        <img src="images/svg/starfooter.svg" alt="логотип страницы ... , нажать для перехода">
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- горизонтальная линия футера  -->
+        <hr size="1px" color="#9D9D9D" max-width="1200px">
+        <!-- блок контейнера футера под линией  -->
+        <div style="gap: 48px;" class="txt002 whitecolor foot-box1">
+            <p style=" cursor: pointer">©Youtalk, 2018 – 2022</p>
+            <p style=" cursor: pointer">Юридические документы</p>
+            <p style=" cursor: pointer">Способы оплаты</p>
+
+        </div>
+    </div>    
+</footer>
 </html>

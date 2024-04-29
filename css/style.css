@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html, body, footer{
+    margin: 0;
+}
 
 .header__container{
     display: flex;
@@ -28,6 +31,11 @@
     margin-right: 51px;
     margin-bottom: 20px;  
 }
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
 .nav__container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -39,16 +47,17 @@
     line-height: 114%; /* 15.96px */
     letter-spacing: 0.25px;
 }
+
 li{
     list-style: none;
-    
-
 }
+
 a{
     text-decoration: none;
     color: #333333;
-    font-family: "Montserrat-Medium";    
+    font-family: "Montserrat-Medium";        
 }
+
 .nav__button{    
     display: inline-block;
     padding: 14px 20px;
@@ -56,92 +65,72 @@ a{
     gap: 10px;
     margin-right: 120px;
     border-radius: 4px;
-    background-color:red;
+    background-color:#E3F5F5;
     color: #03B2A5;
     border: none;
     font-family: "Montserrat-Bold";
 }
+
 .content{
     display: block;
-    overflow: auto;
+    /*overflow: auto;*/
     margin: 0 120px;   
     max-width: 1440px;
+    margin-top: 140px;
 }
-.top-row{
-    display: flex;
-    margin-top: 92px;
-}
-.top-row__text-one{
-    margin-right: 4px;
-   
-}
-.top-row__arrow{
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-}
-.top-row__arrow__img{
-    width: 100%;
-    height: 100%;
-}
-
 
 .heading-blog{
     display: inline;
-    width: 552px;
+    max-width: 552px;
     height: auto;
 }
-.heading-blog__txt{
-    line-height: 56px;
+
+
+/* вот начинаются шрифты, */----------------------
+
+.heading-blog__txt{   
     text-align: start;
     font-family: "Montserrat-Bold";
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 56px; /* 116.667% */
+    color: red;
 }
 
 /* для первого блока (строка с названиями статей).*/
 .content-one{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items:center;
+    justify-content: start;   
     flex-flow: row wrap;
-    width: auto;
+    max-width: 1440px;
     height: auto;      
     margin-top: 32px; 
    
 }
+
 .content-one__box{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-content: center;    
+    display: inline-flex;        
     padding: 6px 8px;
     border: 1px solid #C1C5CD;
     border-radius: 24px;
     width: auto;  
     height: 32px;     
-    margin: 8px 8px 8px 8px;
-       
+    margin: 8px 8px 0px 8px;       
 }
+
 .content-one__box-img{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;    
+    display: inline-block;    
     width: 20px;
     height: 20px;
-    object-fit: cover;
-    padding: 1px;
+    object-fit: cover;   
     margin-right: 4px;
 }
-.content-one__box-txt{
-   /* display: flex;
-    flex-direction: row;
-    justify-content:start;
-    align-items: center;*/
+
+/* также есть шрифт */-----------------------
+.content-one__box-txt{ 
+    display: inline-block;  
     color: #333;
     font-family: "Montserrat-SemiBold";
     font-size: 14px;
@@ -151,9 +140,9 @@ a{
 }
 
 
-/* набор фото для верхней части окнтейнера*/
+/* набор фото для верхней части контейнера*/
 .img001{
-    background-image: url("../images/png/001.png");
+    background-image: url("../images/png/001.png");    
 }
 .img002{
     background-image: url("../images/png/002.png");
@@ -178,7 +167,8 @@ a{
 }
 
 
-/* для второго блока (из двух контейнеров*/
+/* для второго блока (из двух контейнеров   посмотреть используется ли гдето еще контейнер из дух юлоков
+если нет , о можно не менять */
 .content-two{
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -188,7 +178,8 @@ a{
     row-gap: 23px;
     margin-top: 23px;
 }
-/*контейнер во втором блоке*/
+/* 
+контейнер во втором блоке   ту вобщемто менять нечего, внесен минимум */
 .content-two__box{
     display: inline-block;
     max-width:588px;
@@ -198,45 +189,49 @@ a{
 }
 
 
-/* для третьего блока (из трех контейнеров*/
+/* для третьего блока (из трех контейнеров  ту менять нечего, внвесен минимум */
 .content-three {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr)); 
+    grid-template-columns: repeat(3,1fr); 
     grid-template-rows: 1fr 1fr;
     grid-auto-rows: 1fr;
     column-gap: 24px;    
     row-gap: 23px;
     margin-top: 23px;
+    height: auto;
+    
 }
+
 /*контейнер в третьем блоке*/
 .content-three__box{ 
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width:384px ;
-    max-height: 260px ;
+    max-height: auto ;
     border-radius: 24px;
-    border: 1px solid #DEDEDE;
+    border: 1px solid #DEDEDE;     
 }
 
 
 /*фото для контейнера*/
-.content__box-img{      
+.content__box-img{        
     width: auto;
     height: 260px;
     object-fit: cover;
-    border-radius: 24px;
+    border-radius: 24px 24px 0px 0px;
     padding: 8px;   
 }
 
 
 /* контейнер для текста под фото */
-.content__box-txt{
+.content__box-txt{    
     display: flex;
     flex-direction: column;
-    margin: 17px 16px 16px 16px;
-    justify-content: start;
-    align-items: start;
-    row-gap: 4px;
+    margin: 17px 16px 16px 16px;   
+    row-gap: 4px;        
 }
+
 /* набор текстов под фото*/
 .txt001{
     align-self: stretch;
@@ -245,36 +240,223 @@ a{
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 26px; /* 144.444% */    
-    height: 52px;
+    line-height: 144.444%; /* 26px*/
+    height: auto;
     max-width:541px ;
-    /*margin-bottom: 14px;*/
+    margin-bottom: 4px;    
+    cursor: pointer;
 }
+
 .txt002{
     color: #494949;
     font-family: "Montserrat-Regular";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
+    line-height: 150%; /*  18px*/
+    letter-spacing: 0.25px;
+    margin-bottom: 8px;  
+    height:auto;  
+}
+
+.txt003{
+    color: #333333;   
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:142.857%; /*  20px*/
+    align-self: stretch;    
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.txt004{
+    color: #868686;
+    font-family: "Montserrat-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 18px; /* 150% */
-    letter-spacing: 0.25px;   
-    
-    
+    letter-spacing: 0.25px;
+    height: auto;  
+    margin-left: 16px;         
+    margin-bottom: 16px;
 }
 
-
-
-
-
-
-
-
-.content-three__box-txt{
-    display: block;
-    width:384px ;
-    padding: 16px;
-
-}
-.shadow{
+/* затенение  */
+.shadow{      
     background-color: #FFFFFF70;
 }
+
+/* кнопка ,,ещё,,  */
+.addmore{
+    display: flex;
+    width: 182px;
+    padding: 12px 16px;
+    max-height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 4px;
+    border-radius: 4px;
+    background-color: #35B3A9;
+    color: #FFFFFF;
+    font-family: "Montserrat-Bold";
+    cursor: pointer;
+    margin: 56px auto 96px;
+  
+}
+  
+.center{
+    display: flex;
+    justify-content: center;   
+    /* cursor: pointer;  -  можно использоват для расширени области действия - 
+    подействует также и на область рядом с addmore */
+}
+ 
+/* футер - общий контейнер */
+.foot{
+    max-width: 100%;
+    max-height: 350px;
+    flex-shrink: 0;
+    background-color: #2963A3;
+    align-items: center;
+    padding: 40px 26px 78px 120px;
+}
+
+/*футер - контейнер для наполнения */
+.foot-box{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    max-width: 1200px;
+    height:auto;
+    margin-bottom: 24px;
+    
+}
+
+/* футер - первый блок контейнера */
+.foot-box1{
+    display: flex;
+    align-items: flex-start;
+    gap: 93px;
+}
+
+/* футер - второй блок контейнера */
+.foot-box2{
+    /* display: block;
+    max-width: 486px; */
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* футер - третий блок контейнера */
+.foot-box3{
+    display: block;
+    width: 221px;
+    height: 50px;
+    color: #b37c35;
+}
+
+/* футер - группа иконок сойсетей */
+.foot-icon-group{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+/* футер - форма для иконок */
+.rectangle-footer{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: #EFF5FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* футер - форма отправки"ваш емэйл"  */
+.emailform{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 384px;
+    max-height: 48px;  
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(157, 157, 157, 0.20);
+    background: #FFF;    
+}
+
+/* футер - стрелка в форме отправки "ваш емэйл"  */
+.emailform-arrow{
+    display: flex;
+    width: 64px;
+    height: 48px;
+    padding: 14px 20px;
+    align-items: center;    
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #16C8BB;
+
+}
+
+/* футер - стилизация инпута в форме отправки  */
+input{    
+    border: none;
+    margin: 14px 16px;    
+}
+
+/* футер - бокс для ссылок  */
+.foot-box_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;   
+}
+
+/* стилизация белым цветом  */
+.whitecolor{
+    color: #FFFFFF;
+}
+
+
+
+/* набор классов для статей */
+.content-of-article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:228px;
+         
+}
+
+/* ширина */
+.width1200{
+    max-width: 1200px;
+}
+
+.width690{
+    max-width: 690px;
+}
+
+.width282{
+    max-width: 282px;
+}
+
+.of-article{
+    display: flex;
+    flex-direction: column;
+}
+ .grid-to-five-rows{
+    display: grid;
+    flex-direction: column;
+    row-gap: 4px;
+    grid-template-rows: repeat(5, 1fr);
+ }
